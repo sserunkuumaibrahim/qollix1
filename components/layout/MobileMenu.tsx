@@ -17,7 +17,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: MobileMen
         if (isMobileMenu) {
             handleMobileMenu();
         }
-    }, [pathname]);
+    }, [pathname, isMobileMenu, handleMobileMenu]);
 
     useEffect(() => {
         const handleResize = () => {
