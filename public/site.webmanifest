@@ -1,0 +1,31 @@
+{
+  "name": "Qollix - Premium African Tech Talent",
+  "short_name": "Qollix",
+  "description": "Hire pre-vetted senior African software engineers in 10-14 days",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#18cb96",
+  "icons": [
+    {
+      "src": "/qollix-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/qollix-favicon.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/qollix-favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/qollix-favicon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
