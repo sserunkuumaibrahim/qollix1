@@ -13,15 +13,22 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Create a transporter using SMTP (you'll need to configure this with your email service)
+        // Create a transporter using SMTP (optimized for Vercel)
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.gmail.com',
             port: parseInt(process.env.SMTP_PORT || '587'),
-            secure: false, // true for 465, false for other ports
+            secure: process.env.SMTP_PORT === '465', // true for 465, false for other ports
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS,
             },
+            // Add these options for better Vercel compatibility
+            tls: {
+                rejectUnauthorized: false
+            },
+            connectionTimeout: 10000, // 10 seconds
+            greetingTimeout: 5000, // 5 seconds
+            socketTimeout: 10000, // 10 seconds
         });
 
         // Email content
