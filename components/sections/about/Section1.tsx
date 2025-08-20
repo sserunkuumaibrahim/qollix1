@@ -24,7 +24,7 @@ export default function Section1() {
                                     <div className="col-lg-6">
                                         <div className="conter-box conter-box2">
                             <h3>
-                                <span className="counter">15</span>+
+                                <span className="counter">7</span>+
                             </h3>
                             <p>African Countries</p>
                         </div>

@@ -29,7 +29,7 @@ export default function Home() {
                     <Section10 />
                     <Section11 />
                 </div>
-                <Section13LatestBlog />
+                {/* <Section13LatestBlog /> */}
                 <Section12 />
             </Layout>
         </>
